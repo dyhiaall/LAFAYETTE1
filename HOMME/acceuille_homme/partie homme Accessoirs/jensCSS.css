@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.row center {
+    justify-content: center;
+}
+
+.box {
+    text-align: center;
+    margin: 40px;
+}
+
+img {
+    width: 350px;
+    height: auto;
+    border: 1px solid bold;
+    border-radius: 5px;
+    display: block;
+    margin: 20 auto;
+}
+
+p {
+    font-weight: bold;
+    margin-top: 5px;
+}
