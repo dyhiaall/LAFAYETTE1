@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> La Livraison </title>
+    <link rel="stylesheet" href="livr.css">
+</head>
+<body>
+    <h2> Passer Votre Commande </h2>
+    <form method="get" action="projet.php">
+        <table>
+            <tr>
+                <td><label for="nom"> Nom : </label></td>
+                <td><input type="text" id="nom" name="nom" required></td>
+            </tr>
+            <tr>
+                <td><label for="prénom"> Prénom : </label> </td>
+                <td> <input type="text" id="prenom" name="prenom" required> </td>
+            </tr>
+            <tr>
+                <td><label for="numéro"> Numéro Du Téléphone :</label></td>
+                <td><input type="text" id="numero" name="numéro" required></td>
+            </tr>
+            <tr>
+                <td> <label for="adresse"> Adresse Compléte : </label></td>
+                <td> <input type="text" id="adresse" name="adresse" required></td>
+            </tr>
+            <tr>
+                <td> <label for="pointure"> Pointure : </label> </td>
+                <td> 
+                    <select name="pointure" id="pointure" required>
+                      <option value="36"> 36 </option>
+                      <option value="37"> 37 </option>
+                      <option value="38"> 38 </option>
+                      <option value="39"> 39 </option>
+                      <option value="40"> 40 </option>
+                      <option value="41"> 41 </option>
+                   </select>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="5"> <p> Couleur :</p></td>
+                <td> 
+                    <input type="checkbox" id="noir" name="couleur" value="Noir" checked >
+                    <label for="noir"> Noir </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="blanc" name="couleur" value="Blanc">
+                    <label for="blanc"> Blanche </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="beige" name="couleur" value="Beige">
+                    <label for="beige"> Beige </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="rouge" name="couleur" value="Rouge">
+                    <label for="rouge"> Rouge </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="marron" name="couleur" value="Marron">
+                    <label for="marron"> Marron </label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="quantité"> Quantité : </label></td>
+                <td><input type="number" id="quantité" name="quantité"></td>
+            </tr>
+            <tr>
+                <td><p>Lieu De Livraison : </p></td>
+                <td>
+                    <input type="radio" id="br" name="livraison" value="Bureau" checked>
+                    <label for="br"> Bureau De Livraison </label>
+                    <input type="radio" id="dm" name="livraison" value="Domicile">
+                    <label for="br"> Livraison à Domicile </label>
+                </td>
+            </tr>
+            <tr class="envoie">
+                <td colspan="2"><input type="submit" value="Envoyer La Commande"> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
