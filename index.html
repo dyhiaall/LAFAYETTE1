@@ -8,11 +8,9 @@
 <body>
 <header>
   <div class="partie1">
-      
     <div class="A1">
       <a href="FEMME/acceuille_femme/acceuil_femme.html" class="ST1">FEMME</a>
       <a href="HOMME/acceuille_homme/acceuille_homme.html" class="ST2">HOMME</a>
-      
     </div>
       
     <div class="A2">
@@ -304,38 +302,6 @@
     
 
 </footer>
-
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const style = document.createElement("style");
-    style.innerHTML = `
-      h1, h2, h3 {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: all 0.8s ease;
-      }
-      .visible {
-        opacity: 1 !important;
-        transform: translateY(0) !important;
-      }
-    `;
-    document.head.appendChild(style);
-
-    const titres = document.querySelectorAll("h1, h2, h3");
-    titres.forEach((titre, index) => {
-      setTimeout(() => {
-        titre.classList.add("visible");
-      }, index * 300); // effet en cascade
-    });
-  });
-</script>
- 
-
-
-
-  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
