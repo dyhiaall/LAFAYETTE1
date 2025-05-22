@@ -32,6 +32,9 @@
 </header>
 
 
+  <h2 id="texte-machine"></h2>
+
+
 
 <section class="acceuil-section2">
   <div class="grande-imgcont">
@@ -302,6 +305,24 @@
     
 
 </footer>
+      <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const texte = "Bienvenue sur La Fayette - Découvrez votre style unique.";
+    const cible = document.getElementById("texte-machine");
+    let index = 0;
+
+    function taperLettre() {
+      if (index < texte.length) {
+        cible.innerHTML += texte.charAt(index);
+        index++;
+        setTimeout(taperLettre, 80);
+      }
+    }
+
+    taperLettre();
+  });
+</script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
