@@ -960,3 +960,11 @@ flex-direction: column;
     MARGIN-RIGHT: 8EM;
     FONT-SIZE: larger;
 }
+ 
+
+#texte-machine {
+  font-size: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  text-align: center;
+}
