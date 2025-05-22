@@ -402,59 +402,6 @@
       
   
   </footer>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const style = document.createElement("style");
-    style.innerHTML = `
-      h1, h2, h3 {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: all 0.8s ease;
-      }
-      .visible {
-        opacity: 1 !important;
-        transform: translateY(0) !important;
-      }
-    `;
-    document.head.appendChild(style);
-
-    const titres = document.querySelectorAll("h1, h2, h3");
-    titres.forEach((titre, index) => {
-      setTimeout(() => {
-        titre.classList.add("visible");
-      }, index * 300); // effet en cascade
-    });
-  });
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const style = document.createElement("style");
-    style.innerHTML = `
-      .scroll-anime {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.6s ease-out;
-      }
-      .scroll-visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    `;
-    document.head.appendChild(style);
-
-    const elements = document.querySelectorAll("section, div, article");
-    elements.forEach(el => el.classList.add("scroll-anime"));
-
-    window.addEventListener("scroll", () => {
-      elements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 50) {
-          el.classList.add("scroll-visible");
-        }
-      });
-    });
-  });
-</script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
 </body>
