@@ -3,20 +3,18 @@
 <html>
     <head>
         <link rel="stylesheet" href="LAFAYETTE.CSS">
-        <style>
-            a{
-                pointer-events:auto;
-                cursor:pointer;
-        </style>
+         
     </head>
 <body>
 <header>
   <div class="partie1">
+      <div class="nav no-anime">
     <div class="A1">
       <a href="FEMME/acceuille_femme/acceuil_femme.html" class="ST1">FEMME</a>
       <a href="HOMME/acceuille_homme/acceuille_homme.html" class="ST2">HOMME</a>
       
     </div>
+      <div>
     <div class="A2">
       <a href="" class="STYLE1" >LAFAYETTE</a>
     </div> 
@@ -349,7 +347,7 @@
     `;
     document.head.appendChild(style);
 
-    const elements = document.querySelectorAll("section, div, article");
+    const elements = document.querySelectorAll("section, div:not(.no-anime), article");
     elements.forEach(el => el.classList.add("scroll-anime"));
 
     window.addEventListener("scroll", () => {
