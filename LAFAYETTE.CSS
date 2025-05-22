@@ -965,6 +965,6 @@ flex-direction: column;
 #texte-machine {
   font-size: 2rem;
   font-family: 'Segoe UI', sans-serif;
-  color: pink;
-  text-align: center;
+  color: pink !important;
+  text-align: center !important;
 }
