@@ -8,13 +8,13 @@
 <body>
 <header>
   <div class="partie1">
-      <div class="nav no-anime">
+      
     <div class="A1">
       <a href="FEMME/acceuille_femme/acceuil_femme.html" class="ST1">FEMME</a>
       <a href="HOMME/acceuille_homme/acceuille_homme.html" class="ST2">HOMME</a>
       
     </div>
-      <div>
+      
     <div class="A2">
       <a href="" class="STYLE1" >LAFAYETTE</a>
     </div> 
@@ -331,35 +331,7 @@
     });
   });
 </script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const style = document.createElement("style");
-    style.innerHTML = `
-      .scroll-anime {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.6s ease-out;
-      }
-      .scroll-visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    `;
-    document.head.appendChild(style);
-
-    const elements = document.querySelectorAll("section, div:not(.no-anime), article");
-    elements.forEach(el => el.classList.add("scroll-anime"));
-
-    window.addEventListener("scroll", () => {
-      elements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 50) {
-          el.classList.add("scroll-visible");
-        }
-      });
-    });
-  });
-</script>
+ 
 
 
 
